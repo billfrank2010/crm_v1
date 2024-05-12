@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    margin: 10;
-    padding: 0;
+    margin: 0;
+    padding: 20px 40px;
   }
   
   .container {
@@ -43,6 +43,8 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    margin-left: 20px; /* Increased left margin */
+    margin-right: 20px; /* Increased right margin */
     border: 1px solid #ccc;
   }
   
