@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile Managment</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+
+    <h1>Enter User Information</h1>
+    <form method="POST" action="/">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>User Records</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Age</th>
+        </tr>
+        {% for record in records %}
+        <tr>
+            <td>{{ record[1] }}</td>
+            <td>{{ record[2] }}</td>
+            <td>{{ record[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
